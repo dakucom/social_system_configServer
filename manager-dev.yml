@@ -9,6 +9,8 @@ eureka:
       defaultZone: http://127.0.0.1:6868/eureka/
   instance:
     prefer-ip-address: true
+  rabbitmq:
+    host: 192.168.146.137
 zuul:
   routes:
     tensquare-gathering: # 活动
@@ -38,5 +40,5 @@ zuul:
 jwt:
   config:
     # 加盐
-    key: lmzw
+    key: dakuzai
     ttl: 3600000
